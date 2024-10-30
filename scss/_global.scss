@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -7,12 +7,22 @@
     scroll-behavior: smooth;
 }
 
-body{
-    // font-family: "", "";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-family: "Exo 2", sans-serif;
 }
 
-.container{
-    // width: ___px;
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+.container {
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
 }

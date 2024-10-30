@@ -1,0 +1,123 @@
+.work-section {
+    margin-top: 120px;
+}
+
+.work-section__content-wrapper {
+    max-width: 535px;
+    text-align: start;
+    margin-bottom: 56px;
+}
+
+.work-section__content-wrapper h2 {
+    color: var(--cl-bl);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 32px;
+}
+
+.work-section__content-wrapper p {
+    color: var(--cl-gr);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.work-list {
+    @include display($space: space-between);
+}
+
+.work-list__item {
+    width: 393px;
+    box-shadow: 0px 4px 15px 0px #0000001F;
+}
+
+.work-list__item-content-wrapper {
+    padding: 24px 34px 32px 32px;
+}
+
+.work-list__item-img-wrapper {
+    width: 393px;
+    height: 247px;
+}
+
+.work-list__item-content-wrapper h3 {
+    color: var(--cl-bl);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+
+.work-list__item-content-wrapper p {
+    color: var(--cl-gr);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.work-list__item-content-wrapper strong {
+    color: var(--cl-bl);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.6px;
+    border-bottom: 3px solid #FFCE50;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1230px) {
+    .work-list {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .work-list__item {
+        width: 100%;
+    }
+
+    .work-list__item-img-wrapper {
+        width: 100%;
+        height: 287px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .work-list__item:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-list__item:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .work-section__content-wrapper h2 {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 24px;
+    }
+
+    .work-section__content-wrapper p {
+        width: 100%;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .work-list__item-img-wrapper {
+        height: 222px;
+    }
+
+    .work-list__item-content-wrapper h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .work-list__item-content-wrapper p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

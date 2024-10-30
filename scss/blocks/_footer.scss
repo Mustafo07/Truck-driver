@@ -1,0 +1,127 @@
+.site-footer {
+    margin-top: 166px;
+    padding: 59px 0 29px 0;
+    background-color: #0B7572;
+}
+
+.footer {
+    @include display($space: space-between);
+    align-items: start;
+    margin-bottom: 79px;
+}
+
+.footer-list-wrapper {
+    @include display($space: start);
+    gap: 97px;
+    align-items: start;
+    padding-top: 21px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-list__item a {
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.16em;
+
+    &:hover {
+        color: #FF9619;
+    }
+}
+
+.footer-icon-wrapper {
+    padding-top: 21px;
+    @include display($space: start);
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.footer-link-tel {
+    color: #fff;
+    display: block;
+    font-family: "Exo 2", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    margin-bottom: 32px;
+
+    &:hover {
+        color: #FF9619;
+    }
+}
+
+.footer__btn {
+    width: 271px;
+    padding: 8px 0;
+    gap: 14px;
+    border: none;
+    @include display($space: center);
+    background-color: #FF9619;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+}
+
+.footer-section-text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.16em;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .footer-list {
+        gap: 13px;
+    }
+
+    .footer-list__item a {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .footer-link-tel {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .footer__btn {
+        width: 143px;
+        font-size: 6px;
+        line-height: 9px;
+    }
+
+    .footer-section-text {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .footer {
+        @include display($space: center);
+        flex-direction: column;
+
+    }
+
+    .footer-link-tel {
+        margin-top: 63px;
+    }
+
+    .footer__btn {
+        width: 290px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
